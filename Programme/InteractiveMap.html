@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_24bffcc1c14ea84b82a07f23490c97d0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_24bffcc1c14ea84b82a07f23490c97d0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_24bffcc1c14ea84b82a07f23490c97d0 = L.map(
+                "map_24bffcc1c14ea84b82a07f23490c97d0",
+                {
+                    center: [38.5, 23.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "maxBounds": [
+[
+-90,
+-180,
+],
+[
+90,
+180,
+],
+],
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+  "maxBoundsViscosity": 0.4,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_24bffcc1c14ea84b82a07f23490c97d0);
+
+            
+
+        
+    
+            var tile_layer_998d734cefa2ab270f1ee77b6269a134 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_998d734cefa2ab270f1ee77b6269a134.addTo(map_24bffcc1c14ea84b82a07f23490c97d0);
+        
+    
+            var circle_marker_b8c3b531206d789146038629af7cbeef = L.circleMarker(
+                [37.983286, 23.726907],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_24bffcc1c14ea84b82a07f23490c97d0);
+        
+    
+        var popup_68a216f3b7eba952a4fda59a991328fc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_43abaa97fefb4d0cf52b995da3f9d12a = $(`<div id="html_43abaa97fefb4d0cf52b995da3f9d12a" style="width: 100.0%; height: 100.0%;">City: Athens<br>Date: Sun 6/4<br>High: 19°C<br>Low: 10°C<br>Precipitation: 2%<br>Comments: Night: Clear to partly cloudy</div>`)[0];
+                popup_68a216f3b7eba952a4fda59a991328fc.setContent(html_43abaa97fefb4d0cf52b995da3f9d12a);
+            
+        
+
+        circle_marker_b8c3b531206d789146038629af7cbeef.bindPopup(popup_68a216f3b7eba952a4fda59a991328fc)
+        ;
+
+        
+    
+    
+            circle_marker_b8c3b531206d789146038629af7cbeef.bindTooltip(
+                `<div>
+                     Athens
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c91b6f399e8a9d02535bb07c730174f6 = L.circleMarker(
+                [39.366581, 22.951202],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_24bffcc1c14ea84b82a07f23490c97d0);
+        
+    
+        var popup_da781aea983e4c1640e0af002d05fa55 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f1a35845ab68fa3ce80cee626d02ae0a = $(`<div id="html_f1a35845ab68fa3ce80cee626d02ae0a" style="width: 100.0%; height: 100.0%;">City: Volos<br>Date: Sun 6/4<br>High: 21°C<br>Low: 7°C<br>Precipitation: 5%<br>Comments: Night: Clear</div>`)[0];
+                popup_da781aea983e4c1640e0af002d05fa55.setContent(html_f1a35845ab68fa3ce80cee626d02ae0a);
+            
+        
+
+        circle_marker_c91b6f399e8a9d02535bb07c730174f6.bindPopup(popup_da781aea983e4c1640e0af002d05fa55)
+        ;
+
+        
+    
+    
+            circle_marker_c91b6f399e8a9d02535bb07c730174f6.bindTooltip(
+                `<div>
+                     Volos
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_90bb92211ef528affe37b769dc5f3b52 = L.circleMarker(
+                [35.338152, 25.1421],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_24bffcc1c14ea84b82a07f23490c97d0);
+        
+    
+        var popup_ea6501e5825ed928b63b9e603437b409 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e3392076203e85921997815a5250118d = $(`<div id="html_e3392076203e85921997815a5250118d" style="width: 100.0%; height: 100.0%;">City: Heraklion<br>Date: Sun 6/4<br>High: 19°C<br>Low: 12°C<br>Precipitation: 2%<br>Comments: Night: Partly cloudy</div>`)[0];
+                popup_ea6501e5825ed928b63b9e603437b409.setContent(html_e3392076203e85921997815a5250118d);
+            
+        
+
+        circle_marker_90bb92211ef528affe37b769dc5f3b52.bindPopup(popup_ea6501e5825ed928b63b9e603437b409)
+        ;
+
+        
+    
+    
+            circle_marker_90bb92211ef528affe37b769dc5f3b52.bindTooltip(
+                `<div>
+                     Heraklion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
